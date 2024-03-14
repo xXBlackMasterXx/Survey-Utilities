@@ -26,14 +26,19 @@ EMAIL_PASSWORD=
 Here a description of each variable:
 
 `DISTRIBUTION_DIR`: The relative folder path to the distribution background data
+
 `PURESPECTRUM_DIR`: The relative folder path to the purespectrum background data
+
 `LUCID_DIR`: The folder relative path to the lucid background data
+
 `CINT_ACCESS_DIR`: The relative folder path to the Cint Access background data
 
 `SYNO_EMAIL`: The email of the Manager account
+
 `SYNO_PASSWORD`: The password of the Syno Manager account (not Google)
 
 `EMAIL_SENDER`: Usually, the email from Syno (see lesssecureapps in Google to send python emails)
+
 `EMAIL_PASSWORD`: The password of the App to send emails using Python 
 
 `REMOTE_SERVER`: The Selenium grid URL to execute Selenium automate scripts for data retrieval
