@@ -42,3 +42,33 @@ Here a description of each variable:
 `EMAIL_PASSWORD`: The password of the App to send emails using Python 
 
 `REMOTE_SERVER`: The Selenium grid URL to execute Selenium automate scripts for data retrieval
+
+# Additional notes of the dev environment
+
+1. Check that Docker deamon is running using the following command: 
+
+```bash
+sudo service docker status
+```
+
+If stopped, you can start it using
+```bash
+sudo service docker start
+```
+
+and use the previous code to check status back again
+
+
+2. Start the docker container for Selenium Grid using the following command:
+
+```bash
+docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" selenium/standalone-edge
+```
+
+You can access to the Selenium grid UI using this link once this docker container is running: http://localhost:4444
+
+(Optional) To see what is happening inside the container, head to http://localhost:7900/?autoconnect=1&resize=scale&password=secret.
+
+
+Please, see the docs for this here:
+https://hub.docker.com/r/selenium/standalone-edge
